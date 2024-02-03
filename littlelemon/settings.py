@@ -71,9 +71,22 @@ WSGI_APPLICATION = 'littlelemon.wsgi.application'
 
 # Database
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'dtbgenhw_Littlelemon',
+        'USER': 'dtbgenhw_sami',
+        'PASSWORD': 'Littlelemon@#2024',
+        'HOST': '87.98.160.37',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
+        }
     }
 }
 
