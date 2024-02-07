@@ -10,8 +10,8 @@ urlpatterns = [
     path('api-token-auth/', obtain_auth_token),
 
     # Menu urls
-    path('menu', MenuListCreateApi.as_view(), name='menu_list_create'),
-    path('menu/<int:pk>', MenuRetrieveUpdateDestroyApi.as_view(), name='menu_retrieve_update_destroy'),
+    path('menu-items', MenuListCreateApi.as_view(), name='menu_list_create'),
+    path('menu-items/<int:pk>', MenuRetrieveUpdateDestroyApi.as_view(), name='menu_retrieve_update_destroy'),
     # Booking urls
     path('booking/', include(router.urls)),
 ]

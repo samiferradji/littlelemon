@@ -9,7 +9,7 @@ urlpatterns = [
     path('auth/', include('djoser.urls.authtoken')),
 
     # Restaurant app urls
-    path('restaurant/', include('restaurant.urls')),
+    path('api/', include('restaurant.urls')),
     
 
 ]
